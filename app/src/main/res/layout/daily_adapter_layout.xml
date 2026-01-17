@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10sp"
+    android:background="@drawable/background_outline"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFF8BE"
+                android:text="03/03/2023" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/weatherStatusImg"
+            android:layout_width="300sp"
+            android:layout_height="150sp"
+            android:layout_weight="1"
+            android:paddingEnd="20sp"
+            app:srcCompat="@drawable/cloudy" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="#FF5722"
+        tools:ignore="SmallSp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:paddingStart="10sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rainTextViewinP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10sp"
+            android:text="Rain : 00%" />
+
+        <TextView
+            android:id="@+id/WindSpeedTextViewKMH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="WindSpeed : 00KMH" />
+
+        <TextView
+            android:id="@+id/DaylightTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:text="Daylight Duration : 00:00:00" />
+
+        <TextView
+            android:id="@+id/sunriseTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="Sunrise : 11:11:11" />
+
+        <TextView
+            android:id="@+id/sunsetTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="Sunset : 11:11:11" />
+
+        <TextView
+            android:id="@+id/temperatureMaxTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:textSize="29sp"
+            android:textColor="@color/white"
+            android:text="Max Temperature : 30&#xb0;C" />
+
+        <TextView
+            android:id="@+id/temperatureMinTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:textSize="29sp"
+            android:textColor="@color/white"
+            android:text="Min Temperature : 30&#xb0;C" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
